@@ -1,0 +1,2 @@
+CREATE TABLE posting (id SERIAL PRIMARY KEY, amount VARCHAR(45), status VARCHAR(45), "timestamp" VARCHAR(45));
+INSERT INTO posting (id, amount, status, "timestamp") VALUES (1, '24.67', 'pending', '2021-10-06 00:40:42');
