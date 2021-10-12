@@ -3,9 +3,8 @@ spring:
     name: flyway-demo
   datasource:
     driverClassName: org.postgresql.Driver
-    url: "jdbc:postgresql://localhost:5432/flywaydemodb"
-    password: "password"
-    username: "postgres"
+    url: "jdbc:postgresql://localhost:26257/flywaydemodb"
+    username: "root"
     testOnBorrow: true
     testWhileIdle: true
     timeBetweenEvictionRunsMillis: 60000
@@ -15,12 +14,10 @@ spring:
     max-idle: 10
     max-wait: 8000
 flyway:
-  url: jdbc:postgresql://localhost:5432/flywaydemodb
-  schemas: flywaydemodb
-  user: "postgres"
-  password: "password"
   locations: "classpath:db/migration"
 logging:
   level:
     org:
       flywaydb: DEBUG
+server:
+  port : 8074

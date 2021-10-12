@@ -1,4 +1,4 @@
-package com.captains.entity;
+package com.captains.integration.model.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -13,7 +13,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Builder(toBuilder = true)
 @Table(name = "posting")
-public class Posting {
+public class PostingEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
